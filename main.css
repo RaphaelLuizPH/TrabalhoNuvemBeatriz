@@ -1,0 +1,195 @@
+
+.dark {
+--text-color: white; 
+--background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
+--shadow-color: rgb(255, 255, 255);
+--blur-color:   rgba(0, 0, 0, 0.1);
+--icon-color:   rgb(231, 0, 0);
+--name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
+--switch-img:  white url(./lightside.svg) no-repeat center;
+--tema-side: 1;
+
+}
+
+#txt {
+transform: translateX(-50%, -50%);
+text-align: center;
+font-size: 50px;
+font-family: Poppins;    
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+.txt {
+    margin: 0;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    font-family: Poppins;    
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#aulatempo {
+transform: translateX(-50%, -50%);
+text-align: center;
+font-size: 15px;
+font-family: Poppins;    
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+color: rgb(255, 255, 255);
+}
+
+
+body {
+
+background: linear-gradient(90deg, rgb(105, 145, 255) 0%, #040730 100%);
+background-position: top center; 
+background-size: cover;   
+}
+
+
+
+
+.center {
+    background: var(--blur-color);
+    backdrop-filter: blur(5px);
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration-thickness: auto; 
+    display: flexbox;
+    flex-direction: row;
+    margin-top: 1px;
+    border-radius: 30px;
+    box-shadow: 10px 10px var(--shadow-color) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+    
+} 
+
+
+#box{
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%; 
+    align-items: center;
+    justify-content: center;
+    background: var(--blur-color);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    text-decoration-thickness: auto; 
+    border-radius: 10px;
+    width: 50%;
+}
+
+#name{ 
+font-size: 80px;
+font-family: Poppins;    
+font-optical-sizing: auto;
+font-weight: 500;
+font-style: normal;
+font-variation-settings:
+"BLED" 0,
+"SCAN" 0;
+background: var(--name-gradient);
+background-clip: text;
+color: transparent;
+text-align: center;
+margin: 10%;
+} 
+
+#curso{
+
+font-size: 32px;
+font-family: "Workbench", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0; 
+color: var(--text-color);
+text-align: center;
+margin: 0 auto;
+padding: 10px;
+
+}
+
+
+.container {
+
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    color: #ffffff;
+}
+
+
+@keyframes blurry {
+0% {font-size: 64px;}
+20% {font-size: 80px; filter: blur(10px);}
+40% {font-size: 100px; }
+60% {font-size: 150px;}  
+90% {font-size: 150px; color: var(--text-color); }
+100% {font-size: 64px; color: var(--text-color);}
+}
+
+
+
+ion-icon {
+color: var(--icon-color);
+padding-bottom: 5px;
+font-size: 64px;
+transition: font-size 2.5s ease-in-out;
+display: block;
+margin: auto;
+justify-content: center;
+text-align: center;
+}
+
+
+ion-icon:hover{
+animation-name: blurry;
+animation-duration: 2s; 
+animation-fill-mode: forwards;
+animation-delay: -1s;
+
+}
+
+.legenda{
+color: var(--text-color);
+font-size: 16px;
+text-align: center;
+font-family: poppins;
+}
+
+
+#container {
+width: 360px;
+margin: auto; 
+padding: 24px;
+}
+
+
+
+
