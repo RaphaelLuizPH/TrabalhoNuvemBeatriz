@@ -15,7 +15,7 @@ function auladaBia() {
 
     setInterval(auladaBia, 1000)
     setTimeout(auladaBia, 1000)
-    setTimeout(startTime, 10000);
+
 
 
 function startTime() {
@@ -33,7 +33,7 @@ function startTime() {
     else
     document.getElementById('txt').innerHTML = h + ":" + m ;
     
-    
+    setTimeout(startTime, 10000);
 }
 
 

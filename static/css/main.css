@@ -24,12 +24,15 @@ color: rgb(255, 255, 255);
 
 
 
-
-
-
-
 .txt {
-    margin: 0;
+    text-align: center;
+}
+
+
+
+p {
+    display: inline-flex;
+    margin: auto;
     transform: translateX(-50%, -50%);
     text-align: center;
     font-size: 25px;
@@ -38,8 +41,13 @@ color: rgb(255, 255, 255);
     font-weight: 500;
     font-style: normal;
     color: rgb(255, 255, 255);
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+p:hover {
+font-size: 50px;
+position: relative;
+}
 
 
 #aulatempo {
@@ -78,7 +86,7 @@ background-size: cover;
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);
     
     
