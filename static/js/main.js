@@ -24,18 +24,14 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
-    let a = today.getFullYear()
-
     m = ChecarTempo(m);
     s = ChecarTempo(s);
-
-    document.getElementById("data").innerHTML = + a
         
     
     if (h < 10)
-    document.getElementById('txt').innerHTML = "0" + h + ":" + m;
+    document.getElementById('horas').innerHTML = "0" + h + ":" + m;
     else
-    document.getElementById('txt').innerHTML = h + ":" + m ;
+    document.getElementById('horas').innerHTML = h + ":" + m ;
 
     setTimeout(startTime, 1000);
 }

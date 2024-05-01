@@ -1,0 +1,44 @@
+body {
+    background: no-repeat  url(https://images8.alphacoders.com/133/thumb-1920-1337846.png);
+}
+
+#box {
+    backdrop-filter: blur(10px);
+    border: solid rgba(255, 255, 255, 0.247);
+    border-radius: 10px;
+    padding: 25px;
+    width: 1080px;
+    height: 920px;
+}
+
+#horas{
+    position: absolute;
+    right: 1%;
+    display: inline;
+    font-size: 25px;
+    color: white;
+    display: inline;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}  
+
+.alunos {
+    font-size: 20px;
+    color: white;
+    display:inline;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#aulatempo {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
