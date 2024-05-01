@@ -4,4 +4,6 @@ gcloud init
 
  gcloud run deploy
 
- href="{{url_for('login')}}">
+ href="{{url_for('login')}}"> 
+
+ <img src="{{url_for('static', filename='Hermes.png')}}" align="middle" />
