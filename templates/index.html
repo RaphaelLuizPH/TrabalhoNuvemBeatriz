@@ -23,27 +23,32 @@
 
 </head> 
 
+
+
 <body onload="startTime(), auladaBia()">
 
-<h1 id="name">Este site está rodando em nuvem!</h1>
+<div class="backbox"></div>
 
-<div id="box">
-<div id="txt">
-</div> 
+<h1 id="name">Este site está rodando em nuvem!
+<div id="data"></div> 
+</h1>
+
+<div class="box">
+  <div id="txt"></div>
+  <div id="aulatempo"></div>
 </div>
 
-<div id="box">
-<div id="aulatempo"></div>
-</div>
-<div class="txt">
-    <a class="alunos" href="{{url_for('login')}}">Raphael, </a>
-    <p class="alunos">Wagner, </p>
-    <p class="alunos">Lucas, </p>
-    <p class="alunos">Isabella, </p>
-    <p class="alunos">Pedro, </p>
-    <p class="alunos">Juliano</p>
+<div id='whitespace'> 
+  <div class="txt">
+            <p class="alunos"> Raphael, </p>
+            <p class="alunos">Wagner, </p>
+            <p class="alunos">Lucas, </p>
+            <p class="alunos">Isabella, </p>
+            <p class="alunos">Pedro, </p>
+            <p class="alunos">Juliano</p>
   </div>
-  
+</div>
+
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

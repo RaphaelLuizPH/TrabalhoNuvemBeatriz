@@ -1,3 +1,9 @@
+function MudarTema() {
+    const html = document.documentElement
+    html.classList.toggle("dark")
+}
+
+
 function auladaBia() {
 
     let agora = new Date();
@@ -23,17 +29,20 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
+    let a = today.getFullYear()
 
-    
     m = ChecarTempo(m);
     s = ChecarTempo(s);
 
+    document.getElementById("data").innerHTML = + a
+        
+    
     if (h < 10)
     document.getElementById('txt').innerHTML = "0" + h + ":" + m;
     else
     document.getElementById('txt').innerHTML = h + ":" + m ;
-    
-    setTimeout(startTime, 10000);
+
+    setTimeout(startTime, 1000);
 }
 
 

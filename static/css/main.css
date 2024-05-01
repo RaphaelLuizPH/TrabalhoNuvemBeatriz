@@ -3,16 +3,14 @@
 --text-color: white; 
 --background: linear-gradient(90deg, rgb(32, 32, 32) 0%, #000213 100%);
 --shadow-color: rgb(255, 255, 255);
---blur-color:   rgba(0, 0, 0, 0.1);
+--blur-color:   rgba(255, 254, 254, 0.1);
 --icon-color:   rgb(231, 0, 0);
 --name-gradient: linear-gradient(90deg, rgb(250, 250, 250) 0%, #ececec 100%);
 --switch-img:  white url(./lightside.svg) no-repeat center;
---tema-side: 1;
 
 }
 
 #txt {
-transform: translateX(-50%, -50%);
 text-align: center;
 font-size: 50px;
 font-family: Poppins;    
@@ -22,21 +20,25 @@ font-style: normal;
 color: rgb(255, 255, 255);
 }
 
-
+#whitespace{
+    padding: 277px 0px;
+}
 
 .txt {
+    padding: 50px 0px;
+    margin: auto;
     text-align: center;
+    background-color: #ffffff10;
+    backdrop-filter: blur(5px);
+    width: 720px;
 }
 
 
 
 .alunos {
     text-decoration: none;
-    display: inline-flex;
-    margin: auto;
-    transform: translateX(-50%, -50%);
-    text-align: center;
-    font-size: 25px;
+    display: inline;
+    font-size: 20px;
     font-family: Poppins;    
     font-optical-sizing: auto;
     font-weight: 500;
@@ -48,11 +50,11 @@ color: rgb(255, 255, 255);
 .alunos:hover {
 font-size: 50px;
 position: relative;
+cursor: pointer;
 }
 
 
 #aulatempo {
-transform: translateX(-50%, -50%);
 text-align: center;
 font-size: 15px;
 font-family: Poppins;    
@@ -60,6 +62,7 @@ font-optical-sizing: auto;
 font-weight: 500;
 font-style: normal;
 color: rgb(255, 255, 255);
+position: relative;
 }
 
 
@@ -71,19 +74,21 @@ background-size: cover;
 }
 
 
+#data {
+    color: white;
+    font-size: 20px;
+    font-family: Poppins;
+    position: relative;
+}
 
 
 .center {
-    background: var(--blur-color);
-    backdrop-filter: blur(5px);
     padding: 25px 25px;
     text-align: center;
     text-decoration-thickness: auto; 
     display: flexbox;
     flex-direction: row;
     margin-top: 1px;
-    border-radius: 30px;
-    box-shadow: 10px 10px var(--shadow-color) ;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,24 +98,38 @@ background-size: cover;
     
 } 
 
-
-#box{
-    position: relative;
+.backbox {
+    display: block;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
     transform: translate(-50%,-50%);
     top: 50%;
-    left: 50%; 
-    align-items: center;
-    justify-content: center;
+    left: 50%;
+    background-color: #000000;
+    border-radius: 10%;
+    width: 720px;
+    height: 900px;
+}
+
+
+.box{
+
+    margin: auto;
+    text-align: center;
     background: var(--blur-color);
     backdrop-filter: blur(5px);
-    text-align: center;
-    text-decoration-thickness: auto; 
     border-radius: 10px;
-    width: 50%;
+    width: 277px;
+    position: absolute;
+    transform: translateY();
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 60%;
 }
 
 #name{ 
-font-size: 80px;
+font-size: large;
 font-family: Poppins;    
 font-optical-sizing: auto;
 font-weight: 500;
@@ -154,36 +173,6 @@ padding: 10px;
 }
 
 
-@keyframes blurry {
-0% {font-size: 64px;}
-20% {font-size: 80px; filter: blur(10px);}
-40% {font-size: 100px; }
-60% {font-size: 150px;}  
-90% {font-size: 150px; color: var(--text-color); }
-100% {font-size: 64px; color: var(--text-color);}
-}
-
-
-
-ion-icon {
-color: var(--icon-color);
-padding-bottom: 5px;
-font-size: 64px;
-transition: font-size 2.5s ease-in-out;
-display: block;
-margin: auto;
-justify-content: center;
-text-align: center;
-}
-
-
-ion-icon:hover{
-animation-name: blurry;
-animation-duration: 2s; 
-animation-fill-mode: forwards;
-animation-delay: -1s;
-
-}
 
 .legenda{
 color: var(--text-color);
