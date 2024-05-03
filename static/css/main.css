@@ -1,5 +1,110 @@
 body {
-    background: no-repeat  url(https://images8.alphacoders.com/133/thumb-1920-1337846.png);
+    background: no-repeat  url(https://images3.alphacoders.com/925/thumb-1920-925905.jpg);
+}
+
+p#info{
+    color: white;
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+
+
+}
+
+
+.container h1 {
+    color: white;
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+}
+
+
+
+
+.logocontainer{
+padding: 2px;
+display: block;
+text-align: center;
+position: absolute;
+left: 62%;
+z-index: 1;
+width: 20%;
+height: 20%;
+z-index: 1;
+min-width: 20%;
+min-height: 20%;
+}
+
+#googlecloudrun{
+width: 100%;
+}
+
+.numero{   
+    position: relative;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.274);
+    bottom: 10%;
+    right: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.fade {
+animation-name: fade;
+animation-duration: 0.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.container{
+    width: 1000px;
+    padding: 150px 0px;
+    display: none;
+}
+
+
+ion-icon#seta{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    font-size: 60px;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s;
+}
+
+ion-icon#seta:hover{
+    font-size: 65px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+}
+
+ion-icon#seta2{
+    transform: rotate(0.5turn);
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    font-size: 60px;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s;
+}
+
+ion-icon#seta2:hover{
+    font-size: 65px;
+    background-color: rgba(218, 218, 218, 0.171);
+    border-radius: 10px;
 }
 
 #box {
@@ -40,5 +145,5 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
 }
