@@ -1,5 +1,6 @@
 body {
-    background: no-repeat  url(https://images3.alphacoders.com/925/thumb-1920-925905.jpg);
+    background-size: cover;
+    background: no-repeat url(https://images3.alphacoders.com/925/thumb-1920-925905.jpg);
 }
 
 p#info{
@@ -40,22 +41,18 @@ p#info{
     border-radius: 10%;
 }
 
-.logocontainer{
-padding: 2px;
-display: block;
-text-align: center;
+.logocontainer{  
 position: absolute;
-left: 70%;
-z-index: 1;
-width: 20%;
-height: 20%;
-z-index: 1;
-min-width: 20%;
-min-height: 20%;
+right: -225px;
+width: 200px;
+height: 120px;
+border-radius: 10px;
+background: white no-repeat;
 }
 
 #googlecloudrun{
 width: 100%;
+height: fit-content;
 }
 
 .numero{   
