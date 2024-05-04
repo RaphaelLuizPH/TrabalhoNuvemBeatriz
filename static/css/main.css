@@ -4,7 +4,8 @@
 body {
   background-size: cover;
   background: no-repeat black
-    url(https://static.vecteezy.com/system/resources/previews/011/991/259/large_2x/black-metal-texture-steel-background-the-pattern-metal-sheet-is-perforated-with-a-flash-of-light-modern-industrial-style-wallpapers-free-photo.jpg);
+  url(https://static.vecteezy.com/system/resources/previews/011/991/259/large_2x/black-metal-texture-steel-background-the-pattern-metal-sheet-is-perforated-with-a-flash-of-light-modern-industrial-style-wallpapers-free-photo.jpg);
+  height: 100vh;
 }
 
 p#info {
