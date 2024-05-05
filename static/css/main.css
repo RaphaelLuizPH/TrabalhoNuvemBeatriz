@@ -2,9 +2,10 @@
 
 
 body {
+  background-blend-mode: color-burn;
   background-size: cover;
-  background: no-repeat black
-  url(https://static.vecteezy.com/system/resources/previews/011/991/259/large_2x/black-metal-texture-steel-background-the-pattern-metal-sheet-is-perforated-with-a-flash-of-light-modern-industrial-style-wallpapers-free-photo.jpg);
+  background: repeat #163085
+  url(https://techgenix.com/tgwordpress/wp-content/uploads/2019/05/google-cloud-servicenow-e1558108068160.jpg);
   height: 100vh;
 }
 
@@ -76,6 +77,8 @@ p#info {
 }
 
 .numero {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   position: relative;
   color: #f2f2f2;
   font-size: 12px;

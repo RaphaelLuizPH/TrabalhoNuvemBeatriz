@@ -33,7 +33,8 @@
   </head>
 
   <body onload="startTime(), auladaBia()">
-    <div id="box"> <!---Caixa dos slides-->
+    <div id="box">
+      <!---Caixa dos slides-->
       <div class="txt">
         <p class="alunos">Raphael,</p>
         <p class="alunos">Wagner,</p>
@@ -67,45 +68,71 @@
         ></ion-icon>
       </div>
 
+      <!--Slides 1-->
       <div class="container fade">
-        <div class="numero">1 / 3</div>
-        <h1><strong>Run</strong></h1>
-        <br />
-        <p id="info">Google Run</p>
-      </div>
-
-      <div class="container fade">
-        <div class="numero">2 / 3</div>
-        <h1><strong>Run</strong></h1>
+        <div class="numero">1 / 4</div>
+        <h1><strong>Introdução ao Google Cloud</strong></h1>
         <br />
         <p id="info">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          O Google Cloud é uma plataforma de computação em nuvem que permite
+          construir, implantar e escalar aplicativos, sites e serviços na mesma
+          infraestrutura do Google dados, multi-cloud híbrida, IA e ML1.
+          <br /><br />
+          O Google Cloud oferece mais de 20 produtos gratuitos e novos clientes
+          recebem $300 em créditos gratuitos na inscrição
         </p>
       </div>
-
+      <!--Slides 2-->
       <div class="container fade">
-        <div class="numero">3 / 3</div>
-        <h1><strong>Run</strong></h1>
+        <div class="numero">2 / 4</div>
+        <h1><strong>Recursos do Google Cloud</strong></h1>
         <br />
         <p id="info">
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the 1960s with the release of Letraset sheets
-          containing Lorem Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
+          Recursos do Google Cloud IA: <br /><br />
+          Aprendizado de máquina: O Google Cloud permite construir e dimensionar
+          aplicativos de IA com o Vertex AI e o Gemini Code Assist.
+          <br /><br />Computação: O Google Cloud oferece uma variedade de opções
+          de computação para atender às suas necessidades, desde VMs até
+          contêineres e funções sem servidor. <br /><br />Armazenamento: O
+          Google Cloud oferece soluções de armazenamento duráveis, seguras e
+          escalonáveis para seus dados estruturados e não estruturados
         </p>
       </div>
-
+      <!--Slides 3-->
+      <div class="container fade">
+        <div class="numero">3 / 4</div>
+        <h1><strong>Introdução ao Cloud Run</strong></h1>
+        <br />
+        <p id="info">
+          O Cloud Run é uma plataforma de computação gerenciada que permite
+          executar contêineres diretamente na infraestrutura escalável do
+          Google. <br /><br />
+          Você pode implantar código escrito em qualquer linguagem no Cloud Run
+          se puder construir uma imagem de contêiner a partir dele. <br /><br />
+          O Cloud Run foi projetado para funcionar bem com outros serviços do
+          Google Cloud, permitindo a construção de aplicativos completos.
+        </p>
+      </div>
+      <!--Slides 4-->
       <div class="container fade">
         <div class="numero">4 / 4</div>
-        <h1><strong>Run</strong></h1>
+        <h1>
+          <strong>Recursos do Cloud Run</strong>
+        </h1>
         <br />
 
-        <p id="info"></p>
+        <p id="info">
+          Serviços e trabalhos: No Cloud Run, seu código pode ser executado
+          continuamente como um serviço ou como um trabalho. <br /><br />Escalabilidade
+          rápida baseada em solicitações: O Cloud Run é construído para escalar
+          rapidamente para lidar com todas as solicitações recebidas ou para
+          lidar com o aumento da utilização da CPU fora das solicitações se a
+          alocação de CPU estiver definida para sempre ligada.<br /><br /> Gerenciamento de
+          tráfego integrado: Cada implantação cria uma nova revisão imutável.
+          Você pode rotear o tráfego de entrada para a revisão mais recente,
+          voltar para uma revisão anterior ou dividir o tráfego para várias
+          revisões ao mesmo tempo, para realizar uma implantação gradual.
+        </p>
       </div>
       <div id="txt"></div>
 
