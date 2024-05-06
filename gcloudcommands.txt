@@ -1,0 +1,7 @@
+gcloud init
+
+ gcloud config set project projetonuvem-28042024
+
+ gcloud run deploy
+
+ href="{{url_for('login')}}">

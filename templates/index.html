@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/cloud_FILL0_wght400_GRAD0_opsz24.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      lang="pt-br"
+    />
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+
+    <title>Trabalho Nuvem</title>
+  </head>
+
+  <body onload="startTime(), auladaBia()">
+    <div id="box">
+      <!---Caixa dos slides-->
+      <div class="txt">
+        <p class="alunos">Raphael,</p>
+        <p class="alunos">Wagner,</p>
+        <p class="alunos">Lucas,</p>
+        <p class="alunos">Isabella,</p>
+        <p class="alunos">Pedro,</p>
+        <p class="alunos">Juliano</p>
+        <div id="horas"></div>
+        <br />
+        <div id="aulatempo"></div>
+      </div>
+
+      <div class="logocontainer">
+        <img
+          id="googlecloudrun"
+          src="https://cdn.icon-icons.com/icons2/2699/PNG/512/google_cloud_run_logo_icon_171057.png"
+          alt=""
+        />
+      </div>
+
+      <div id="botoes">
+        <ion-icon
+          name="arrow-forward"
+          id="seta"
+          onclick="plusSlides(1)"
+        ></ion-icon>
+        <ion-icon
+          name="arrow-forward"
+          id="seta2"
+          onclick="plusSlides(-1)"
+        ></ion-icon>
+      </div>
+
+      <!--Slides 1-->
+      <div class="container fade">
+        <div class="numero">1 / 4</div>
+        <h1><strong>Introdução ao Google Cloud</strong></h1>
+        <br />
+        <p id="info">
+          O Google Cloud é uma plataforma de computação em nuvem que permite
+          construir, implantar e escalar aplicativos, sites e serviços na mesma
+          infraestrutura do Google dados, multi-cloud híbrida, IA e ML1.
+          <br /><br />
+          O Google Cloud oferece mais de 20 produtos gratuitos e novos clientes
+          recebem $300 em créditos gratuitos na inscrição
+        </p>
+      </div>
+      <!--Slides 2-->
+      <div class="container fade">
+        <div class="numero">2 / 4</div>
+        <h1><strong>Recursos do Google Cloud</strong></h1>
+        <br />
+        <p id="info">
+          Recursos do Google Cloud IA: <br /><br />
+          Aprendizado de máquina: O Google Cloud permite construir e dimensionar
+          aplicativos de IA com o Vertex AI e o Gemini Code Assist.
+          <br /><br />Computação: O Google Cloud oferece uma variedade de opções
+          de computação para atender às suas necessidades, desde VMs até
+          contêineres e funções sem servidor. <br /><br />Armazenamento: O
+          Google Cloud oferece soluções de armazenamento duráveis, seguras e
+          escalonáveis para seus dados estruturados e não estruturados
+        </p>
+      </div>
+      <!--Slides 3-->
+      <div class="container fade">
+        <div class="numero">3 / 4</div>
+        <h1><strong>Introdução ao Cloud Run</strong></h1>
+        <br />
+        <p id="info">
+          O Cloud Run é uma plataforma de computação gerenciada que permite
+          executar contêineres diretamente na infraestrutura escalável do
+          Google. <br /><br />
+          Você pode implantar código escrito em qualquer linguagem no Cloud Run
+          se puder construir uma imagem de contêiner a partir dele. <br /><br />
+          O Cloud Run foi projetado para funcionar bem com outros serviços do
+          Google Cloud, permitindo a construção de aplicativos completos.
+        </p>
+      </div>
+      <!--Slides 4-->
+      <div class="container fade">
+        <div class="numero">4 / 4</div>
+        <h1>
+          <strong>Recursos do Cloud Run</strong>
+        </h1>
+        <br />
+
+        <p id="info">
+          Serviços e trabalhos: No Cloud Run, seu código pode ser executado
+          continuamente como um serviço ou como um trabalho. <br /><br />Escalabilidade
+          rápida baseada em solicitações: O Cloud Run é construído para escalar
+          rapidamente para lidar com todas as solicitações recebidas ou para
+          lidar com o aumento da utilização da CPU fora das solicitações se a
+          alocação de CPU estiver definida para sempre ligada.<br /><br /> Gerenciamento de
+          tráfego integrado: Cada implantação cria uma nova revisão imutável.
+          Você pode rotear o tráfego de entrada para a revisão mais recente,
+          voltar para uma revisão anterior ou dividir o tráfego para várias
+          revisões ao mesmo tempo, para realizar uma implantação gradual.
+        </p>
+      </div>
+      <div id="txt"></div>
+
+      <div class="imagebox">
+        <img
+          src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Google_Cloud_Covered.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!---A caixa acaba aqui-->
+
+    <div id="page">
+      <div id="video">
+        <iframe
+          width="1520"
+          height="720"
+          src="https://www.youtube.com/embed/JXGUf6oIqco?si=I0AF2rjZWmEv2-2U"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
